@@ -1,0 +1,43 @@
+#root {
+  height: 100%;
+  font-family: 'Comic Sans MS';
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.euler {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-rows: 1fr 9fr;
+  grid-template-columns: 3fr 7fr;
+  grid-template-areas: "header header"
+                       "navigation content";
+  height: 100%;
+}
+
+.header, .content, .navigation {
+  padding: 15px;
+}
+
+.header {
+  grid-area: header;
+  border: 1px solid black;
+}
+
+.content {
+  grid-area: content;
+  border: 1px solid black;
+}
+
+.navigation {
+  grid-area: navigation;
+  border: 1px solid black;
+}
+
+.navigation div {
+  cursor: pointer;
+  margin-top: 20px;
+}
