@@ -10,13 +10,18 @@ import ProblemTwo from '../../repositories/problem_two';
 import ProblemThree from '../../repositories/problem_three';
 import ProblemFour from '../../repositories/problem_four';
 import ProblemFive from '../../repositories/problem_five';
+import ProblemSix from '../../repositories/problem_six';
+import ProblemSeven from '../../repositories/problem_seven';
+import ProblemEight from '../../repositories/problem_eight';
+import ProblemNine from '../../repositories/problem_nine';
 import ProblemTen from '../../repositories/problem_ten';
+import ProblemEleven from '../../repositories/problem_eleven';
 
 class Euler extends React.Component {
   constructor() {
     super();
     this.state = {
-      problems: [ProblemOne, ProblemTwo, ProblemThree, ProblemFour, ProblemFive, ProblemTen],
+      problems: [ProblemOne, ProblemTwo, ProblemThree, ProblemFour, ProblemFive, ProblemSix, ProblemSeven, ProblemEight, ProblemNine, ProblemTen, ProblemEleven],
       currentProblem: 0
     };
 
