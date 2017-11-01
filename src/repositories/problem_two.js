@@ -9,7 +9,9 @@ const ProblemTwo = {
       sum = previousTwoNumbers[0] + previousTwoNumbers[1];
       fibonacci.push(sum);
     }
+    console.log('Fibonacci Sequence:', fibonacci);
     let evenSums = fibonacci.filter(sum => sum % 2 === 0);
+    console.log('Even Sums:', evenSums);
     return evenSums.reduce((a, b) => a + b, 0);
   },
   description: `

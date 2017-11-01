@@ -8,6 +8,7 @@ const ProblemOne = {
         multiples.push(i);
       }
     }
+    console.log('Multiples of 3 and 5:', multiples);
     let sum = multiples.reduce((a, b) => a + b, 0);
     return sum;
   },

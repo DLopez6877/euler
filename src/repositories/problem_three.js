@@ -19,7 +19,7 @@ const ProblemThree = {
         }
       }
     }
-    console.log(primeNumbers.join(", "));
+    console.log('Factors:', primeNumbers);
     return Math.max(...primeNumbers)
   },
   description: `

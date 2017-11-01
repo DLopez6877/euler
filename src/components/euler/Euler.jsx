@@ -8,13 +8,15 @@ import Navigation from '../navigation/Navigation';
 import ProblemOne from '../../repositories/problem_one';
 import ProblemTwo from '../../repositories/problem_two';
 import ProblemThree from '../../repositories/problem_three';
+import ProblemFour from '../../repositories/problem_four';
+import ProblemFive from '../../repositories/problem_five';
 import ProblemTen from '../../repositories/problem_ten';
 
 class Euler extends React.Component {
   constructor() {
     super();
     this.state = {
-      problems: [ProblemOne, ProblemTwo, ProblemThree, ProblemTen],
+      problems: [ProblemOne, ProblemTwo, ProblemThree, ProblemFour, ProblemFive, ProblemTen],
       currentProblem: 0
     };
 

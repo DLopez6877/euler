@@ -12,13 +12,14 @@ class Solution extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({goal: nextProps.problem.goal});
+    this.setState({
+      goal: nextProps.problem.goal,
+      result: null
+    });
   }
 
   runSolution() {
-    this.setState({
-      result: this.props.problem.solution(this.state.goal)
-    });
+    this.setState({result: this.props.problem.solution(this.state.goal)});
   }
 
   handleChange(event) {
