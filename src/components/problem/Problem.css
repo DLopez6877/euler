@@ -1,0 +1,39 @@
+.wrapper {
+    /* color: #7e879c; */
+}
+
+pre {
+    padding: 20px 0;
+    /* background-color: #21242b; */
+    color: #7e879c;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+    font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+pre p {
+    margin: 0 0 0 20px;
+    display: inline-block;
+}
+
+.code {
+    text-indent: 20px;
+}
+
+input[type="number"] {
+    background: transparent;
+    color: #8ba589;
+    border: none;
+    font-size: 16px;
+    line-height: 16px;
+    -moz-appearance: textfield;
+    caret-color: #4072e2;
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

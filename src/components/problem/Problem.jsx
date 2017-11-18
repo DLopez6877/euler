@@ -1,6 +1,7 @@
 import React from 'react';
+import './Problem.css';
 
-class Solution extends React.Component {
+class Problem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,8 +14,8 @@ class Solution extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     this.setState({
-      goal: nextProps.problem.goal,
-      result: null
+      result: null,
+      goal: nextProps.problem.goal
     });
   }
 
@@ -26,11 +27,15 @@ class Solution extends React.Component {
     this.setState({goal: event.target.value});
   }
 
+  componentDidMount() {
+    var input = document.getElementById('goal');
+    console.log(input);
+    input.focus();
+  }
 
   render() {
     return (
-      <div>
-        <h2>{this.props.problem.title}</h2>
+      <div className="wrapper">
         <a href={this.props.problem.href}>Project Euler</a>
         <p>{this.props.problem.description.split('\n').map((item, key) => {
           return <span key={key}>{item}<br/></span>
@@ -39,12 +44,12 @@ class Solution extends React.Component {
         <p>Answer: {this.state.result}</p>
         <pre>
           <p>let goal = </p>
-          <input type="number" value={this.state.goal} onChange={this.handleChange} />
-          {`${this.props.problem.solution}`}
+          <input id="goal" type="number" value={this.state.goal} onChange={this.handleChange} />
+          <div className="code">{`${this.props.problem.solution}`}</div>
         </pre>
       </div>
     );
   }
 }
 
-export default Solution;
+export default Problem;

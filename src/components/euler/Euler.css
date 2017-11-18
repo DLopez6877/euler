@@ -1,19 +1,8 @@
-#root {
-  height: 100%;
-  font-family: 'Comic Sans MS';
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
 .euler {
   display: grid;
-  grid-gap: 2px;
-  grid-template-rows: 1fr 9fr;
-  grid-template-columns: 3fr 7fr;
-  grid-template-areas: "header header"
+  grid-template-rows: 40px 1fr;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: "navigation header"
                        "navigation content";
   height: 100%;
 }
@@ -24,17 +13,16 @@ html, body {
 
 .header {
   grid-area: header;
-  border: 1px solid black;
 }
 
 .content {
   grid-area: content;
-  border: 1px solid black;
+  background-color: #292c33;
 }
 
 .navigation {
   grid-area: navigation;
-  border: 1px solid black;
+  border-right: 2px solid #1a1a1a;
 }
 
 .navigation div {
