@@ -14,7 +14,7 @@ class NavigationItem extends React.Component {
   render() {
     return (
       <div>
-        <a onClick={this.handleProblemChange}>{this.props.problem.title}</a>
+        ▸ <a onClick={this.handleProblemChange}>{this.props.problem.title}</a>
       </div>
     );
   }
