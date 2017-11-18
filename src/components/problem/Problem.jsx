@@ -25,12 +25,8 @@ class Problem extends React.Component {
 
   handleChange(event) {
     this.setState({goal: event.target.value});
-  }
-
-  componentDidMount() {
-    var input = document.getElementById('goal');
-    console.log(input);
-    input.focus();
+    var goal = document.getElementById('goal');
+    goal.style.width = ((goal.value.length + 1) * 9) + 'px';
   }
 
   render() {
@@ -43,8 +39,8 @@ class Problem extends React.Component {
         <button onClick={this.runSolution}>Solve</button>
         <p>Answer: {this.state.result}</p>
         <pre>
-          <p>let goal = </p>
-          <input id="goal" type="number" value={this.state.goal} onChange={this.handleChange} />
+          <p>var goal = </p>
+          <input id="goal" type="number" value={this.state.goal} onChange={this.handleChange} />;
           <div className="code">{`${this.props.problem.solution}`}</div>
         </pre>
       </div>

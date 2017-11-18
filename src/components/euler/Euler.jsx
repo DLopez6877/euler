@@ -30,6 +30,10 @@ class Euler extends React.Component {
 
   changeCurrentProblem(newIndex) {
     this.setState({ currentProblem: newIndex });
+    setTimeout(function() {
+      var goal = document.getElementById('goal');
+      goal.style.width = ((goal.value.length + 1) * 9) + 'px';
+    }, 50);
   }
 
   render() {
