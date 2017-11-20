@@ -1,3 +1,7 @@
+.wrapper a, .wrapper a:link, .wrapper a:visited {
+    color: #4e86b2;
+}
+
 pre {
     padding: 20px 0;
     /* background-color: #21242b; */
@@ -15,7 +19,33 @@ pre {
 pre p {
     margin: 0 0 0 20px;
     display: inline-block;
+}
+
+button {
+    cursor: pointer;
     background-color: #34363f;
+    color: #7e879c;
+    padding: 4px 16px;
+    font-size: 12px;
+    border: 2px solid #1a1a1a;
+}
+
+button:hover {
+    color: #ddd;
+    background-color: transparent;
+}
+
+button:active {
+    cursor: pointer;
+    background-color: #34363f;
+    color: #7e879c;
+    padding: 4px 16px;
+    font-size: 12px;
+    border: 2px solid #1a1a1a;
+}
+
+button:focus {
+    outline: none;
 }
 
 .code {

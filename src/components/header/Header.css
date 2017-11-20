@@ -11,10 +11,12 @@
     align-items: center;
     border-right: 2px solid #1a1a1a;
     height: 100%;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .active {
-    border-bottom: 2px solid #21242b;
+    border-bottom: 2px solid #292c33;
     box-sizing: content-box;
+    background-color: #292c33;
+    color: #ddd;
 }
