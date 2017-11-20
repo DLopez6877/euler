@@ -1,1 +1,20 @@
+.tabs {
+    display: flex;
+    font-size: 12px;
+    border-bottom: 2px solid #1a1a1a;
+}
 
+.tab {
+    flex:  1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #1a1a1a;
+    height: 100%;
+    max-width: 400px;
+}
+
+.active {
+    border-bottom: 2px solid #21242b;
+    box-sizing: content-box;
+}

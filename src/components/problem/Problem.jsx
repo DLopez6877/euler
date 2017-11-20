@@ -29,18 +29,25 @@ class Problem extends React.Component {
     goal.style.width = ((goal.value.length + 1) * 9) + 'px';
   }
 
+  componentDidMount() {
+    var goal = document.getElementById('goal');
+    goal.style.width = ((goal.value.length + 1) * 9) + 'px';
+  }
+
   render() {
     return (
       <div className="wrapper">
-        <a href={this.props.problem.href}>Project Euler</a>
+        <a href={this.props.problem.href}>Project Euler Link</a>
         <p>{this.props.problem.description.split('\n').map((item, key) => {
           return <span key={key}>{item}<br/></span>
         })}</p>
         <button onClick={this.runSolution}>Solve</button>
         <p>Answer: {this.state.result}</p>
         <pre>
-          <p>var goal = </p>
-          <input id="goal" type="number" value={this.state.goal} onChange={this.handleChange} />;
+          <div className="goal-wrapper">
+            <p>var goal = </p>
+            <input id="goal" type="number" value={this.state.goal} onChange={this.handleChange} />;
+          </div>
           <div className="code">{`${this.props.problem.solution}`}</div>
         </pre>
       </div>

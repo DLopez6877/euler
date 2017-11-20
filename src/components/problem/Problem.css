@@ -1,7 +1,3 @@
-.wrapper {
-    /* color: #7e879c; */
-}
-
 pre {
     padding: 20px 0;
     /* background-color: #21242b; */
@@ -10,9 +6,16 @@ pre {
     font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
+.goal-wrapper {
+    background-color: #34363f;
+    margin: 0 -15px;
+    padding-left: 15px;
+}
+
 pre p {
     margin: 0 0 0 20px;
     display: inline-block;
+    background-color: #34363f;
 }
 
 .code {

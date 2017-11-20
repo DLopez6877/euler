@@ -28,9 +28,10 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="tabs">
         {/* <div>Header works</div> */}
-        <div className="tab">{this.props.title}</div>
+        <div className="tab active">{this.state.title}</div>
+        <div className="tab">About</div>
       </div>
     );
   }
