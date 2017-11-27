@@ -1,22 +1,23 @@
 .tabs {
-    display: flex;
-    font-size: 12px;
-    border-bottom: 2px solid #1a1a1a;
+  display: flex;
+  font-size: 12px;
+  border-bottom: 2px solid #1a1a1a;
 }
 
 .tab {
-    flex:  1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: 2px solid #1a1a1a;
-    height: 100%;
-    max-width: 300px;
+  cursor: pointer;
+  flex:  1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #1a1a1a;
+  height: 100%;
+  max-width: 300px;
 }
 
 .active {
-    border-bottom: 2px solid #292c33;
-    box-sizing: content-box;
-    background-color: #292c33;
-    color: #ddd;
+  border-bottom: 2px solid #292c33;
+  box-sizing: content-box;
+  background-color: #292c33;
+  color: #ddd;
 }

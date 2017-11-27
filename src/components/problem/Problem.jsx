@@ -41,7 +41,7 @@ class Problem extends React.Component {
         <p>{this.props.problem.description.split('\n').map((item, key) => {
           return <span key={key}>{item}<br/></span>
         })}</p>
-        <button onClick={this.runSolution}>Solve</button>
+        <button onClick={this.runSolution}>See Answer</button>
         <p>Answer: {this.state.result}</p>
         <pre>
           <div className="goal-wrapper">
