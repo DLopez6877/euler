@@ -1,3 +1,11 @@
+.wrapper {
+  white-space: pre-wrap;      /* CSS3 */
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -pre-wrap;     /* Opera <7 */
+  white-space: -o-pre-wrap;   /* Opera 7 */
+  word-wrap: break-word;      /* IE */
+}
+
 .wrapper a, .wrapper a:link, .wrapper a:visited {
     color: #4e86b2;
 }
@@ -7,6 +15,12 @@ pre {
     color: #7e879c;
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
     font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    overflow-x: hidden;
+    white-space: pre-wrap;      /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap;     /* Opera <7 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    word-wrap: break-word;      /* IE */
 }
 
 .goal-wrapper {
